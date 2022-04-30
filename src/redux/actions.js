@@ -16,7 +16,6 @@ export const loadCartData = (vazio, json) => {
 
         if (!vazio) {
             axios.get(`${process.env.REACT_APP_API}/${jsonUsage}.json`).then((resp) => {
-                console.log("resp", resp);
                 dispatch(getCartData(resp.data));
             }).catch(error => console.log(error));
         } else {
