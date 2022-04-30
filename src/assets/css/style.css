@@ -1,1 +1,257 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*,
+*:before,
+*:after {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #d1d8e5;
+  font-family: "Poppins";
+  margin: 0px;
+}
+
+body .App {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+  body .App {
+    padding: 20px;
+  }
+}
+
+body .App .cart {
+  width: 412px;
+  min-height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 14px 2px #42424261;
+  box-shadow: 2px 2px 14px 2px #42424261;
+}
+
+body .App .cart .cartHeader {
+  min-height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: 800;
+  padding: 8px;
+  font-size: 20px;
+}
+
+body .App .cart .cartBody {
+  width: 100%;
+}
+
+body .App .cart .cartBody .cartItens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-columns: 1;
+          columns: 1;
+  width: 100%;
+  padding: 20px;
+}
+
+body .App .cart .cartBody .cartItens .item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+body .App .cart .cartBody .cartItens .item:first-child {
+  margin-top: 0px;
+}
+
+body .App .cart .cartBody .cartItens .item .thumb {
+  border: 1px solid #d9d9d9;
+  min-width: 104px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .App .cart .cartBody .cartItens .item .thumb img {
+  width: 102px;
+  height: 107px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: unset;
+     object-fit: unset;
+}
+
+body .App .cart .cartBody .cartItens .item .thumb .quantityField {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #3A74F1;
+  min-width: 24px;
+  height: 24px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2px;
+}
+
+body .App .cart .cartBody .cartItens .item .infos {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 18px;
+}
+
+body .App .cart .cartBody .cartItens .item .infos h4 {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .App .cart .cartBody .cartItens .item .infos h4:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+body .App .cart .cartBody .cartItens .item .infos p {
+  letter-spacing: -0.5px;
+}
+
+body .App .cart .cartBody .cartItens .item .infos p.listPrice {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #bcb8b9;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+body .App .cart .cartBody .cartItens .item .infos p.priceValue {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+body .App .cart .cartBody .totalBox {
+  padding: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+body .App .cart .cartBody .totalBox .totais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .App .cart .cartBody .totalBox .totais h4 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+body .App .cart .cartBody .totalBox .alertFrete {
+  background-color: #c7ffa6;
+  color: #207900;
+  width: 322px;
+  margin: 0px auto;
+  border-radius: 32px;
+  font-size: 15px;
+  padding: 8px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+body .App .cart .cartBody .alertWithoutItems {
+  background-color: #f8d7da;
+  color: #721c24;
+  width: 322px;
+  margin: 0px auto;
+  border-radius: 32px;
+  font-size: 15px;
+  padding: 8px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body .App .cart .cartFooter {
+  padding: 20px;
+}
+
+body .App .cart .cartFooter .btnFinish {
+  background-color: #3A74F1;
+  display: block;
+  width: 100%;
+  height: 51px;
+  border: 0px;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Poppins";
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+body .App .cart .cartFooter .btnFinish:hover {
+  background-color: #2a57b9;
+}
+
+body .App .cart .cartFooter .btnFinish:disabled {
+  background-color: #ccc;
+  cursor: unset;
+}
+/*# sourceMappingURL=style.css.map */

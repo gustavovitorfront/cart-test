@@ -1,0 +1,2 @@
+export const GET_CARTDATA = "GET_CARTDATA";
+export const UPDATE_CARTDATA = "UPDATE_CARTDATA"
