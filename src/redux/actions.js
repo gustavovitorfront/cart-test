@@ -12,7 +12,7 @@ const cartDataUpdated = () => ({
 
 export const loadCartData = (vazio, json) => {
     return function (dispatch) {
-        var jsonUsage = json == 1 ? 'acima-10-reais' : 'abaixo-10-reais';
+        var jsonUsage = json === 1 ? 'acima-10-reais' : 'abaixo-10-reais';
 
         if (!vazio) {
             axios.get(`${process.env.REACT_APP_API}/${jsonUsage}.json`).then((resp) => {
